@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.161:3306/mydb
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+server:
+    port: 8081
+stripe:
+  webhook:
+    secretKey: # Stripe webhook secret key here
+  secretkey: # Stripe API secret key here
